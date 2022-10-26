@@ -1,10 +1,13 @@
 import discord
 import requests
+import os
+from dotenv import load_dotenv
 
 response = requests.get("https://aoe4world.com/api")
-print(response.status_code)
+print(f'Connection status code: {response.status_code}')
 
-TOKEN = 'MTAzNDY2NzY5ODAwNjgwMjQ1Mw.GjbHN-.-a6i8MsDQJykLCZPRMgUL7ApgyV7ruKWv8qED8'
+load_dotenv()
+TOKEN = os.getenv('DISCORD_TOKEN')
 
 intents = discord.Intents.default()
 client = discord.Client(intents=intents)
