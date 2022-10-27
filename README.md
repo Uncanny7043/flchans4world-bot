@@ -8,6 +8,7 @@ For now the bot is only able to fetch 1v1 Ladder user data
     * Find a way to fetch players' Hidden ELO ratings
     * Add more commands
     * Add support for teamgames stats
+    * Get a better name for the bot lol
 
 ## API used
     * https://aoe4world.com/api 
